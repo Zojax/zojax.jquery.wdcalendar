@@ -1,0 +1,11 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   xmlns:zojax="http://namespaces.zope.org/zojax">
+
+  <zojax:resourcedirectory
+     name="jquery.wdcalendar"
+     mapping=".css:zrt"
+     directory="resources" />
+
+</configure>
