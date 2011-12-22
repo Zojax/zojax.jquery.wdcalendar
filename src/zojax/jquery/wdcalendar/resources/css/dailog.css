@@ -1,4 +1,4 @@
-﻿.bbit-window {
+.bbit-window {
     zoom:1;
     display:block;
     z-index:999;
@@ -12,7 +12,7 @@
     -moz-opacity:0;
     filter:alpha(opacity=0);
 }
-  
+
 .bbit-window-proxy {
     border:1px solid;
     z-index:12000;
@@ -42,8 +42,8 @@
 }
 
 .bbit-window-header-text {
-  background:url('images/dailog/app-form.png') no-repeat 3px center ; 
-  padding-left:20px; 
+  background:url('images/dailog/app-form.png') no-repeat 3px center ;
+  padding-left:20px;
   font-weight:bold;
   color:#15428b;
 }
@@ -112,7 +112,7 @@
 
 .bbit-window-body {
     overflow:hidden;
-    
+
 }
 
 .bbit-window-bwrap {
@@ -272,7 +272,7 @@ div.bbit-tool-close
     cursor:pointer;
  float:right;
  width:15px;
- height:15px;   
+ height:15px;
   background-position: 0px 0px;
 }
 div.hover.bbit-tool-close

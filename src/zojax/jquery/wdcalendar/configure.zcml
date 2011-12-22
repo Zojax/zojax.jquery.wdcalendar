@@ -5,7 +5,80 @@
 
   <zojax:resourcedirectory
      name="jquery.wdcalendar"
-     mapping=".css:zrt"
      directory="resources" />
+
+  <!-- styles -->
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-dailog.css"
+     path="jquery.wdcalendar/css/dailog.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-calendar.css"
+     path="jquery.wdcalendar/css/calendar.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-dp.css"
+     path="jquery.wdcalendar/css/dp.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-alert.css"
+     path="jquery.wdcalendar/css/alert.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-main.css"
+     path="jquery.wdcalendar/css/main.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet"
+     mapping=".css:zrt" />
+
+  <!-- javascripts -->
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-Common.js"
+     path="jquery.wdcalendar/js/Common.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-datepicker_lang_US.js"
+     path="jquery.wdcalendar/js/datepicker_lang_US.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.datepicker.js"
+     path="jquery.wdcalendar/js/jquery.datepicker.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.alert.js"
+     path="jquery.wdcalendar/js/jquery.alert.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.ifrmdailog.js"
+     path="jquery.wdcalendar/js/jquery.ifrmdailog.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-wdCalendar_lang_US.js"
+     path="jquery.wdcalendar/js/wdCalendar_lang_US.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.calendar.js"
+     path="jquery.wdcalendar/js/jquery.calendar.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript"
+     mapping=".css:zrt" />
 
 </configure>
