@@ -1,3 +1,5 @@
+/* zrt-replace: "images" "/@@/jquery.wdcalendar/css/images" */
+
 .calmain
 {
 border-bottom:2px solid #c3d9ff;
@@ -63,7 +65,7 @@ border-bottom:2px solid #c3d9ff;
 }
 .wk-daylink:hover
 {
-     text-decoration:underline;    
+     text-decoration:underline;
 }
 .wk-allday {
 	background-color:#e8eef7;
@@ -303,9 +305,9 @@ border-bottom:2px solid #c3d9ff;
 	width:100%;
 	bottom:0;
 	cursor:s-resize;
-	
+
 }
-.rszr_icon 
+.rszr_icon
 {
     /*display:none;*/
 	border-top:3px double white;
@@ -551,8 +553,8 @@ border-bottom:2px solid #c3d9ff;
 	BORDER-LEFT: #ababab 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #fff; BORDER-RIGHT: #ababab 1px solid; PADDING-TOP: 0px
 }
 .cb-root {
-	WIDTH: 100%; 
-	FONT-size: 13px; 
+	WIDTH: 100%;
+	FONT-size: 13px;
 	OVERFLOW: hidden
 }
 .cb-switcher {
@@ -572,7 +574,7 @@ border-bottom:2px solid #c3d9ff;
 	TEXT-ALIGN: left; PADDING-BOTTOM: 0.4em; PADDING-LEFT: 0px; PADDING-RIGHT: 1em; WHITE-SPACE: nowrap; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; PADDING-TOP: 0.4em
 }
 .cb-value {
-	PADDING-BOTTOM: 0.4em; PADDING-LEFT: 0px; WIDTH: 95%; PADDING-RIGHT: 0px; PADDING-TOP: 0.4em;	
+	PADDING-BOTTOM: 0.4em; PADDING-LEFT: 0px; WIDTH: 95%; PADDING-RIGHT: 0px; PADDING-TOP: 0.4em;
 }
 .cb-textarea {
 	HEIGHT: 3.9em
@@ -588,11 +590,11 @@ border-bottom:2px solid #c3d9ff;
 }
 .cal-control
 {
-   
+
 }
 .control-main
 {
-    width: 100%;    
+    width: 100%;
     vertical-align: bottom;
     border-color:#c3d9ff;
 }
@@ -606,10 +608,10 @@ border-bottom:2px solid #c3d9ff;
 	BACKGROUND-COLOR: #c3d9ff
 }
 .tab-name {
-	PADDING-BOTTOM: 3px; 
-	PADDING-LEFT: 6px; 
-	PADDING-RIGHT:6px; 
-	WHITE-SPACE: nowrap; 
+	PADDING-BOTTOM: 3px;
+	PADDING-LEFT: 6px;
+	PADDING-RIGHT:6px;
+	WHITE-SPACE: nowrap;
 	PADDING-TOP: 4px
 }
 .tab-spacer {
@@ -619,7 +621,7 @@ border-bottom:2px solid #c3d9ff;
 {
     margin-top:2px;
     padding:2px;
-    border-top:solid 1px #555;    
+    border-top:solid 1px #555;
 }
 .textbox-fill-div {
 	width:95%;
@@ -628,37 +630,37 @@ border-bottom:2px solid #c3d9ff;
 }
 
 .drag-lasso-container {
-	POSITION: absolute; 
-	WIDTH: 0px; 
-	HEIGHT: 0px; 
-	TOP: 0px; 
+	POSITION: absolute;
+	WIDTH: 0px;
+	HEIGHT: 0px;
+	TOP: 0px;
 	LEFT: 0px
 }
 .drag-lasso {
-	POSITION: absolute; 
-	FILTER: alpha(opacity=50); 
-	LINE-HEIGHT: 0; 
-	BACKGROUND-COLOR: #c3d9ff; 
-	FONT-SIZE: 0px; 
-	opacity: 0.5; 
+	POSITION: absolute;
+	FILTER: alpha(opacity=50);
+	LINE-HEIGHT: 0;
+	BACKGROUND-COLOR: #c3d9ff;
+	FONT-SIZE: 0px;
+	opacity: 0.5;
 	-khtml-opacity: 0.5
 }
 .drag-event {
-	Z-INDEX: 1000; 
-	POSITION: absolute; 
-	FONT-FAMILY: Verdana,sans-serif; 
+	Z-INDEX: 1000;
+	POSITION: absolute;
+	FONT-FAMILY: Verdana,sans-serif;
 	CURSOR: pointer
 }
 .drag-chip-wrapper {
-	Z-INDEX: 1; 
+	Z-INDEX: 1;
 	POSITION: absolute;
-	WIDTH: 100%; 
+	WIDTH: 100%;
 	LEFT: 0px
 }
 .drag-chip {
-	FILTER: alpha(opacity=80); 
-	CURSOR: pointer; 
-	opacity: .8; 
+	FILTER: alpha(opacity=80);
+	CURSOR: pointer;
+	opacity: .8;
 	-khtml-opacity: .8
 }
 .prong {

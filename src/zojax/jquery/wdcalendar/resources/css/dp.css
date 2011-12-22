@@ -1,7 +1,9 @@
+/* zrt-replace: "images" "/@@/jquery.wdcalendar/css/images" */
+
 .bbit-dp
 {
     position:absolute;
-    width:175px;    
+    width:175px;
     border:#718bb7 1px solid;
     overflow:hidden;
     zoom:1;
@@ -16,11 +18,11 @@
 .bbit-dp em
 {
  font-style:normal;
- font-weight:normal;    
+ font-weight:normal;
 }
 .bbit-dp table
 {
-    width:100%;   
+    width:100%;
     table-layout: fixed;
     border-collapse: separate;
 }
@@ -33,7 +35,7 @@
     font:normal 11px tahoma,verdana,helvetica;
     cursor:pointer;
     white-space:nowrap;
-    color:#fff;   
+    color:#fff;
     text-align:center;
 }
 
@@ -41,10 +43,10 @@
 {
      font-size:13px;
     border:0 none;
-    padding-right:10px;    
+    padding-right:10px;
     background:transparent url(images/dp/btn-arrow-light.gif) no-repeat top right;
     font:normal 11px tahoma,verdana,helvetica;
-    padding-left:3px; 
+    padding-left:3px;
     color:#fff;
     cursor:pointer;
     margin:0;
@@ -52,11 +54,11 @@
     width:auto;
     -moz-outline:0 none;
     outline:0 none;
-   
+
 }
 .ie .bbit-dp-top-center button
 {
-    
+
 }
 .bbit-dp-top-right
 {
@@ -65,7 +67,7 @@
 
 .bbit-dp .bbit-dp-top
 {
-   background:url("images/share/hd-sprite.gif") repeat-x 0px -83px; 
+   background:url("images/share/hd-sprite.gif") repeat-x 0px -83px;
 }
 .bbit-dp-top-right,.bbit-dp-top-left{width:18px;}
 .bbit-dp-top-right{text-align:right;}
@@ -106,7 +108,7 @@ border-collapse:separate;
    width:25px;
    background:#dfecfb url(images/share/glass-bg.gif) repeat-x left top;
    text-align:right!important;
-   border-bottom:1px solid #a3bad9;  
+   border-bottom:1px solid #a3bad9;
    color:#233d6d;
    cursor:default;
    padding:0;
@@ -126,17 +128,17 @@ border-collapse:separate;
     color:Black;
 }
 .bbit-dp a
-{   
+{
     text-decoration:none;
-    color:black; 
-    zoom:1; 
+    color:black;
+    zoom:1;
 }
 .bbit-dp-inner td a
 {
     font:normal 11px arial,helvetica,tahoma,sans-serif;
     padding:2px 5px;
-    display:block;  
-    text-align:right;   
+    display:block;
+    text-align:right;
 }
 .picker
 {
@@ -159,7 +161,7 @@ border-collapse:separate;
 .bbit-dp-bottom{padding:2px;border-top:1px solid #a3bad9;background:#dfecfb url(images/share/glass-bg.gif) repeat-x left top;}
 /*.bbit-dp-bottom button {text-decoration:none;text-align:center;text-decoration:none!important;background:#083772;color:white;border:1px solid;border-color:#36c #005 #005 #36c;padding:1px 3px 1px;font:normal 11px arial,helvetica,tahoma,sans-serif;cursor:pointer;}*/
 .bbit-dp-mp{position:absolute;left:0;top:0;background:white;display:none;}
-            
+
 .bbit-dp-mp td{padding:2px;font:normal 11px arial,helvetica,tahoma,sans-serif;}
 td.bbit-dp-mp-month,td.bbit-dp-mp-year,td.bbit-dp-mp-ybtn{border:0 none;text-align:center;vertical-align:middle;width:25%;}
 .bbit-dp-mp-ok{margin-right:3px;}
