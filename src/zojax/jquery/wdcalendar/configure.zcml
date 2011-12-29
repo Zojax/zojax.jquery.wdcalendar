@@ -70,4 +70,43 @@
      path="jquery.wdcalendar/js/jquery.calendar.js"
      require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
 
+  <!-- for edit.html -->
+
+  <!-- styles -->
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-dropdown.css"
+     path="jquery.wdcalendar/css/dropdown.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-colorselect.css"
+     path="jquery.wdcalendar/css/colorselect.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-editform.css"
+     path="jquery.wdcalendar/css/editform.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet" />
+
+  <!-- javascripts -->
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.form.js"
+     path="jquery.wdcalendar/js/jquery.form.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.validate.js"
+     path="jquery.wdcalendar/js/jquery.validate.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.dropdown.js"
+     path="jquery.wdcalendar/js/jquery.dropdown.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.colorselect.js"
+     path="jquery.wdcalendar/js/jquery.colorselect.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
+
 </configure>

@@ -1,15 +1,17 @@
-﻿input.bbit-dropdown
+/* zrt-replace: "images" "/@@/jquery.wdcalendar/css/images" */
+
+input.bbit-dropdown
 {
     border:solid 1px #3C7FB1 !important;
-    background:url("images/dropdown/dropdownhover.gif") no-repeat right center;
+    background:url(images/dropdown/dropdownhover.gif) no-repeat right center;
     padding-right:15px;
     cursor:pointer;
     overflow:hidden;
 }
 input.bbit-dropdown.hover
-{  
+{
     /*padding-right:15;
-    background:url("images/dropdown/dropdownhover.gif") no-repeat right center;   
+    background:url(images/dropdown/dropdownhover.gif) no-repeat right center;
 */
 }
 .dropdowncontainer
@@ -24,7 +26,7 @@ input.bbit-dropdown.hover
     margin: 0;
     padding: 0;
     border: none;
-   
+
 }
 .dropdowncontainer ul li
 {
@@ -37,6 +39,6 @@ input.bbit-dropdown.hover
     cursor:default;
 }
 .dropdowncontainer ul li.hover
-{    
+{
     background:#c3d9ff;
 }
