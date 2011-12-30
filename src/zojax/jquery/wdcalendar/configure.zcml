@@ -88,6 +88,11 @@
      path="jquery.wdcalendar/css/editform.css"
      require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet" />
 
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-fcbkcomplete.css"
+     path="jquery.wdcalendar/css/fcbkcomplete.css"
+     require="jquery-plugins" library="jquery-wdcalendar" type="stylesheet" />
+
   <!-- javascripts -->
   <zojax:resourceinclude
      name="zojax-wdcalendar-jquery.form.js"
@@ -107,6 +112,11 @@
   <zojax:resourceinclude
      name="zojax-wdcalendar-jquery.colorselect.js"
      path="jquery.wdcalendar/js/jquery.colorselect.js"
+     require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
+
+  <zojax:resourceinclude
+     name="zojax-wdcalendar-jquery.fcbkcomplete.min.js"
+     path="jquery.wdcalendar/js/jquery.fcbkcomplete.min.js"
      require="jquery-plugins" library="jquery-wdcalendar" type="javascript" />
 
 </configure>
