@@ -1522,7 +1522,7 @@
             if (data != null) {
                 if (option.quickDeleteUrl != "" && data[8] == 1 && option.readonly != true) {
                     var csbuddle = '<div id="bbit-cs-buddle" style="z-index: 180; width: 400px;visibility:hidden;" class="bubble"><table class="bubble-table" cellSpacing="0" cellPadding="0"><tbody><tr><td class="bubble-cell-side"><div id="tl1" class="bubble-corner"><div class="bubble-sprite bubble-tl"></div></div><td class="bubble-cell-main"><div class="bubble-top"></div><td class="bubble-cell-side"><div id="tr1" class="bubble-corner"><div class="bubble-sprite bubble-tr"></div></div>  <tr><td class="bubble-mid" colSpan="3"><div style="overflow: hidden" id="bubbleContent1"><div><div></div><div class="cb-root"><table class="cb-table" cellSpacing="0" cellPadding="0"><tbody><tr><td class="cb-value"><div class="textbox-fill-wrapper"><div class="textbox-fill-mid"><div id="bbit-cs-what" title="'
-                    	+ i18n.xgcalendar.click_to_detail + '" class="textbox-fill-div lk" style="cursor:pointer;"></div></div></div></td></tr><tr><td class=cb-value><div id="bbit-cs-buddle-timeshow"></div></td></tr></tbody></table><div class="bbit-cs-split"><input id="bbit-cs-id" type="hidden" value=""/>[ <span id="bbit-cs-delete" class="lk">'
+                    	+ i18n.xgcalendar.click_to_detail + '" class="textbox-fill-div lk" style="cursor:pointer;"></div></div></div></td></tr><tr><td class=cb-value><div id="bbit-cs-buddle-timeshow"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-location"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-description"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-attendeers"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-eventUrl"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-CName"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-CEmail"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-CPhone"></div></td></tr><tr><td class=cb-value><div id="bbit-cs-body"></div></td></tr></tbody></table><div class="bbit-cs-split"><input id="bbit-cs-id" type="hidden" value=""/>[ <span id="bbit-cs-delete" class="lk">'
                     	+ i18n.xgcalendar.i_delete + '</span> ]&nbsp; <SPAN id="bbit-cs-editLink" class="lk">'
                     	+ i18n.xgcalendar.update_detail + ' <StrONG>&gt;&gt;</StrONG></SPAN></div></div></div></div><tr><td><div id="bl1" class="bubble-corner"><div class="bubble-sprite bubble-bl"></div></div><td><div class="bubble-bottom"></div><td><div id="br1" class="bubble-corner"><div class="bubble-sprite bubble-br"></div></div></tr></tbody></table><div id="bubbleClose2" class="bubble-closebutton"></div><div id="prong1" class="prong"><div class=bubble-sprite></div></div></div>';
                     var bud = $("#bbit-cs-buddle");
@@ -1589,6 +1589,40 @@
                     else {
                         $("#prong1").show()
                     }
+
+                    //location
+                    if (data[9]) {
+                        $("#bbit-cs-location").css("display", "block").html(data[9]);
+                    }
+                    //description
+                    if (data[10]) {
+                        $("#bbit-cs-description").css("display", "block").html(data[10]);
+                    }
+                    //attendeers
+                    if (data[11]) {
+                    	$("#bbit-cs-attendeers").css("display", "block").html(decodeURIComponent(data[11]))
+                    }
+                    //eventUrl
+                    if (data[12]) {
+                        $("#bbit-cs-eventUrl").css("display", "block").html('<a href="'+data[12]+'">'+data[12]+'</a>');
+                    }
+                    //CName
+                    if (data[13]) {
+                        $("#bbit-cs-CName").css("display", "block").html(data[13]);
+                    }
+                    //CEmail
+                    if (data[14]) {
+                        $("#bbit-cs-CEmail").css("display", "block").html('<a href="mailto:'+data[14]+'">'+data[14]+'</a>');
+                    }
+                    //CPhone
+                    if (data[15]) {
+                        $("#bbit-cs-CPhone").css("display", "block").html(data[15]);
+                    }
+                    //body
+                    if (data[16]) {
+                        $("#bbit-cs-body").css("display", "block").html(data[16]);
+                    }
+
                     var ss = [];
                     var iscos = DateDiff("d", data[2], data[3]) != 0;
                     ss.push(dateFormat.call(data[2], i18n.xgcalendar.dateformat.Md3), " (", __WDAY[data[2].getDay()], ")");
@@ -1603,7 +1637,8 @@
                         }
                     }
                     var ts = $("#bbit-cs-buddle-timeshow").html(ss.join(""));
-                    $("#bbit-cs-what").html(data[1]);
+                    //$("#bbit-cs-what").html(data[1]);
+                    $("#bbit-cs-what").css("display", "block").html('<a href="'+Calendar_URL+data[0]+'">'+data[1]+'</a>');
                     $("#bbit-cs-id").val(data[0]);
                     bud.data("cdata", data);
                     bud.css({ "visibility": "visible", left: pos.left, top: pos.top });
@@ -1611,6 +1646,8 @@
                     $(document).one("click", function() {
                         $("#bbit-cs-buddle").css("visibility", "hidden");
                     });
+
+                    $("#bbit-cs-buddle").find('a').click(function () {window.open(this.href)});
                 }
                 else {
                     if (!option.ViewCmdhandler) {
