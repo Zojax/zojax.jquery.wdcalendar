@@ -240,7 +240,8 @@
              * {Boolean} Whether end user can drag event item by mouse.
              */
             enableDrag: true,
-            loadDateR: []
+            loadDateR: [],
+            zone: new Date().getTimezoneOffset() / 60 * -1
         };
         var eventDiv = $("#gridEvent");
         if (eventDiv.length == 0) {
@@ -1145,11 +1146,11 @@
                 if (option.onBeforeRequestData && $.isFunction(option.onBeforeRequestData)) {
                     option.onBeforeRequestData(1);
                 }
-                var zone = new Date().getTimezoneOffset() / 60 * -1;
+                //var zone = new Date().getTimezoneOffset() / 60 * -1;
                 var param = [
                 { name: "showdate", value: dateFormat.call(option.showday, i18n.xgcalendar.dateformat.fulldayvalue) },
                 { name: "viewtype", value: option.view },
-				 { name: "timezone", value: zone }
+				 { name: "timezone", value: option.zone }
                 ];
                 if (option.extParam) {
                     for (var pi = 0; pi < option.extParam.length; pi++) {
@@ -1747,11 +1748,11 @@
                 var id = data[0];
                 var os = data[2];
                 var od = data[3];
-                var zone = new Date().getTimezoneOffset() / 60 * -1;
+                //var zone = new Date().getTimezoneOffset() / 60 * -1;
                 var param = [{ "name": "calendarId", value: id },
 							{ "name": "CalendarStartTime", value: dateFormat.call(start, i18n.xgcalendar.dateformat.fulldayvalue + " HH:mm") },
 							{ "name": "CalendarEndTime", value: dateFormat.call(end, i18n.xgcalendar.dateformat.fulldayvalue + " HH:mm") },
-							{ "name": "timezone", value: zone }
+							{ "name": "timezone", value: option.zone }
 						   ];
                 var d;
                 if (option.quickUpdateHandler && $.isFunction(option.quickUpdateHandler)) {
@@ -1830,12 +1831,12 @@
                         option.isloading = false;
                         return false;
                     }
-                    var zone = new Date().getTimezoneOffset() / 60 * -1;
+                    //var zone = new Date().getTimezoneOffset() / 60 * -1;
                     var param = [{ "name": "CalendarTitle", value: what },
 						{ "name": "CalendarStartTime", value: datestart },
 						{ "name": "CalendarEndTime", value: dateend },
 						{ "name": "IsAllDayEvent", value: allday },
-						{ "name": "timezone", value: zone}];
+						{ "name": "timezone", value: option.zone}];
 
                     if (option.extParam) {
                         for (var pi = 0; pi < option.extParam.length; pi++) {
