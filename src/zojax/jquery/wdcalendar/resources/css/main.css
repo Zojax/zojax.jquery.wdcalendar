@@ -269,14 +269,15 @@ div.cusErrorPanel
 {
     z-index: auto;
     position:absolute;
-    width: 276px;
-    height: 35px;
+    /*width: 276px;*/
+    height: 24px;
     overflow: hidden;
     text-indent: 5px;
-    line-height: 40px;
+    line-height: 16px;
     font-size: 12px;
     font-family: Arial;
-    background: url(images/validation/tooltop.gif) no-repeat left top;
+    padding-right: 5px;
+    background: url(images/validation/tooltop.png) no-repeat left top;
     opacity:0.9;
     filter: alpha(opacity=90);
 }
